@@ -1,0 +1,10 @@
+<script src="throttle.js"></script>
+<script>
+document.addEventListener("mousemove", throttler(function(e) {
+    console.log(this);
+}.bind({ fooga : true })));
+
+document.addEventListener("mousemove", throttler(function(e) {
+    console.log(this);
+}, { wooga : true }));
+</script>
